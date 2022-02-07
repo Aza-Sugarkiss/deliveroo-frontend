@@ -1,0 +1,57 @@
+.meal {
+  width: 45%;
+  background-color: white;
+  padding: 10px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.meal:hover {
+  cursor: pointer;
+  transition-duration: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 25px 50px -12px;
+}
+
+.meal-info {
+  margin: 5px;
+}
+
+h3 {
+  margin: 5px 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  padding-right: 10px;
+}
+
+.meal p {
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.popular {
+  color: #ff8913;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.meal img {
+  height: 135px;
+  width: 135px;
+  border-radius: 5px;
+  margin: 7px 7px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  color: gray;
+  margin-right: 15px;
+}

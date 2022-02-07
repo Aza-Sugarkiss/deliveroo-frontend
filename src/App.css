@@ -1,1 +1,52 @@
-/* Other rules */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: #f3f5f5;
+}
+
+.container {
+  max-width: 1188px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 320px;
+  background-color: white;
+}
+
+.menu {
+  display: flex;
+}
+
+.categories {
+  max-width: 70%;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1120px) {
+  .menu-list {
+    flex-direction: column;
+  }
+
+  .category {
+    width: 200%;
+  }
+}
+
+@media (max-width: 1000px) {
+  header .restaurant {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 780px) {
+  .sticky {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+  }
+}

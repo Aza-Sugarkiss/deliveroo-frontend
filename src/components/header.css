@@ -1,0 +1,38 @@
+header {
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+.logo {
+  margin-bottom: 5px;
+  height: 45px;
+}
+
+.line {
+  border: 1px solid #eaececd5;
+}
+
+header .restaurant {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.restaurant p {
+  max-width: 95%;
+  color: gray;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+header .restaurant img {
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
