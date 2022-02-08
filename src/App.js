@@ -32,7 +32,7 @@ function App() {
         <div className="categories">
           {data.categories.map((categories, index) => {
             return (
-              categories.meals.length !== 0 && (
+              categories.meals.length > 0 && (
                 <Categories key={index} categories={categories} />
               )
             );
