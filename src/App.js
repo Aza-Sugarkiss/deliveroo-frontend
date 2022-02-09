@@ -3,11 +3,12 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Categories from "./components/Categories";
-import Basket from "./components/Basket";
+import Cart from "./components/Cart";
 
 function App() {
   const [data, setData] = useState("");
   const [isLoading, setIsLoading] = useState(true);
+  const [cart, setCart] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -33,12 +34,17 @@ function App() {
           {data.categories.map((categories, index) => {
             return (
               categories.meals.length > 0 && (
-                <Categories key={index} categories={categories} />
+                <Categories
+                  key={index}
+                  categories={categories}
+                  cart={cart}
+                  setCart={setCart}
+                />
               )
             );
           })}
         </div>
-        <Basket />
+        <Cart cart={cart} setCart={setCart} />
       </div>
     </div>
   );
